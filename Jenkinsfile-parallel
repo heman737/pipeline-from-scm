@@ -14,7 +14,7 @@ pipeline {
             steps {
                 sh 'echo "${name}"'
                 sh 'echo "${person}"'
-                sh 'echo "${choices}"'
+                sh 'echo "${choice}"'
             }
         }
         stage('Approve') {
