@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'echo ${param.person}'
+                sh ${param.person}
             }
         }
         stage('Approve') {
