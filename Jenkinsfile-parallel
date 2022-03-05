@@ -1,5 +1,8 @@
 pipeline {
     agent any
+        environment {
+        name = 'himanshu'
+    }
     parameters {
         string(name: 'person', defaultValue: 'Heman', description: 'Enter your name')
         booleanParam(name: 'Male')
@@ -9,7 +12,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh ${param.person}
+                sh ${name}
             }
         }
         stage('Approve') {
