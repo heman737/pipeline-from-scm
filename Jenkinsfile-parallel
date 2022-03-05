@@ -13,6 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'echo "${name}"'
+                sh 'echo "${person}"'
             }
         }
         stage('Approve') {
